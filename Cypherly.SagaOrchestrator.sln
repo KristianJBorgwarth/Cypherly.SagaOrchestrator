@@ -6,6 +6,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		nuget.config = nuget.config
+		.github\workflows\build-images.yml = .github\workflows\build-images.yml
+		.github\workflows\dotnet-test.yml = .github\workflows\dotnet-test.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{716ADE71-3E46-4207-B2A0-385A6C66A537}"

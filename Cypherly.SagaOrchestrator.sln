@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SagaOrchestrator.API", "SagaOrchestrator.API\SagaOrchestrator.API.csproj", "{663FB02A-7330-4964-B11D-E2C3F52A59EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{CF06AA40-8A37-417C-9D26-779EF75DC783}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{716ADE71-3E46-4207-B2A0-385A6C66A537}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{671C2FA5-D1DA-4CD5-9634-7C5DE348B8E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{663FB02A-7330-4964-B11D-E2C3F52A59EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{663FB02A-7330-4964-B11D-E2C3F52A59EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{663FB02A-7330-4964-B11D-E2C3F52A59EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{663FB02A-7330-4964-B11D-E2C3F52A59EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{663FB02A-7330-4964-B11D-E2C3F52A59EB} = {716ADE71-3E46-4207-B2A0-385A6C66A537}
+	EndGlobalSection
+EndGlobal

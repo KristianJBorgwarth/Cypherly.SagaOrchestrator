@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MassTransit.EntityFrameworkCore" Version="8.5.1" />
+      <PackageReference Include="MassTransit.RabbitMQ" Version="8.5.1" />
+      <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="9.0.7" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SagaOrchestrator.Application\SagaOrchestrator.Application.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Persistence\Migrations\" />
+    </ItemGroup>
+
+</Project>

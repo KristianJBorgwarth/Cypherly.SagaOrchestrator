@@ -1,4 +1,4 @@
-name: Build & Test .NET 8
+name: Build & Test .NET 9
 
 on:
   pull_request:

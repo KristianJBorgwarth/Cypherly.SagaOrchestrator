@@ -4,8 +4,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using SagaOrchestrator.Application.Sagas;
 using SagaOrchestrator.Infrastructure.Persistence.Context;
+using SagaOrchestrator.Infrastructure.SagaStateMachines;
 using SagaOrchestrator.Infrastructure.Settings;
-using SagaOrchestrator.Infrastructure.StateMachines;
 
 namespace SagaOrchestrator.Infrastructure.Extensions;
 
@@ -18,7 +18,7 @@ internal static class MassTransitExtensions
 
             x.AddConsumers(consumerAssembly);
 
-            x.AddSagaStateMachine<UserDeleteSagaMachine, UserDeleteSagaState>().EntityFrameworkRepository(r =>
+            x.AddSagaStateMachine<UserDeleteSagaStateMachine, UserDeleteSagaState>().EntityFrameworkRepository(r =>
             {
                 r.ExistingDbContext<OrchestratorDbContext>();
                 r.UsePostgres();

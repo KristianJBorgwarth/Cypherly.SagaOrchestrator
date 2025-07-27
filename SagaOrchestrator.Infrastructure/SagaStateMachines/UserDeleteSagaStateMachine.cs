@@ -6,9 +6,9 @@ using MassTransit;
 using Microsoft.Extensions.Logging;
 using SagaOrchestrator.Application.Sagas;
 
-namespace SagaOrchestrator.Infrastructure.StateMachines;
+namespace SagaOrchestrator.Infrastructure.SagaStateMachines;
 
-public sealed class UserDeleteSagaMachine : MassTransitStateMachine<UserDeleteSagaState>
+public sealed class UserDeleteSagaStateMachine : MassTransitStateMachine<UserDeleteSagaState>
 {
     public Event<UserDeletedMessage>? UserDeleteMessageReceived { get; private set; }
     public Event<OperationSucceededMessage>? OperationSucceededReceived { get; private set; }
@@ -19,7 +19,7 @@ public sealed class UserDeleteSagaMachine : MassTransitStateMachine<UserDeleteSa
     public State? Failed { get; private set; }
     public State? Finished { get; private set; }
 
-    public UserDeleteSagaMachine(ILogger<UserDeleteSagaMachine> logger)
+    public UserDeleteSagaStateMachine(ILogger<UserDeleteSagaStateMachine> logger)
     {
         InstanceState(x => x.CurrentState);
 

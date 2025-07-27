@@ -11,6 +11,7 @@ public static class InfrastructureExtensions
     public static void AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
         services.ConfigureSettings(configuration);
+        services.AddPersistence(configuration);
         services.ConfigureMasstransit(Assembly.GetExecutingAssembly());
     }
 

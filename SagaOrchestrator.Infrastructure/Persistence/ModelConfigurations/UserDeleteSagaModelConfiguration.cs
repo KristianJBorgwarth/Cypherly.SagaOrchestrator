@@ -5,10 +5,10 @@ using SagaOrchestrator.Application.Sagas;
 
 namespace SagaOrchestrator.Infrastructure.Persistence.ModelConfigurations;
 
-public sealed class UserDeleteSagaMap : SagaClassMap<UserDeleteSagaState>
+public sealed class UserDeleteSagaModelConfiguration : SagaClassMap<UserDeleteSagaState>
 {
-    protected override void Configure(EntityTypeBuilder<UserDeleteSagaState> entity, ModelBuilder model)
+    protected override void Configure(EntityTypeBuilder<UserDeleteSagaState> e, ModelBuilder model)
     {
-        entity.ToTable("user_delete_saga");
+        e.ToTable("user_delete_saga");
     }
 }

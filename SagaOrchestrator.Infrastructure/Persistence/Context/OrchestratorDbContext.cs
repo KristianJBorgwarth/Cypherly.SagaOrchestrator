@@ -10,7 +10,7 @@ public sealed class OrchestratorDbContext(DbContextOptions options) : SagaDbCont
     {
         get
         {
-            yield return new UserDeleteSagaMap();
+            yield return new UserDeleteSagaModelConfiguration();
         }
     }
 }
